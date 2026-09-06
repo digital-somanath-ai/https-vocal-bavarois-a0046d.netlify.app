@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><title>Digital Somanath - Login</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#0b1326;color:#dbe2fd;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,20px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class",theme: {extend: {"colors": {"surface-variant": "#2d3449","on-tertiary-container": "#79451e","on-secondary-container": "#c2aef0","on-tertiary-fixed-variant": "#6b3a14","surface-dim": "#0b1326","on-tertiary-fixed": "#301400","on-primary-fixed": "#001a42","surface-container-low": "#131b2e","tertiary-container": "#feb685","on-error-container": "#ffdad6","primary-fixed": "#d8e2ff","on-primary-fixed-variant": "#2c4677","on-error": "#690005","on-primary": "#122f5f","tertiary-fixed-dim": "#ffb786","glass-surface": "rgba(30, 41, 59, 0.4)","error": "#ffb4ab","glow-primary": "rgba(77, 142, 255, 0.15)","surface-bright": "#31394e","surface-container": "#171f33","background": "#0b1326","glow-secondary": "rgba(208, 188, 255, 0.1)","surface-container-lowest": "#060d20","tertiary-fixed": "#ffdcc6","primary-fixed-dim": "#adc6ff","tertiary": "#ffdbc4","on-secondary": "#37265e","primary": "#d8e2ff","outline": "#8e909a","secondary-container": "#503f79","on-background": "#dbe2fd","on-surface": "#dbe2fd","surface-container-highest": "#2d3449","secondary-fixed-dim": "#d0bcff","on-tertiary": "#502501","primary-container": "#adc6ff","on-surface-variant": "#c2c6d6","outline-variant": "#44474f","error-container": "#93000a","on-secondary-fixed": "#210f48","on-primary-container": "#385283","secondary-fixed": "#e9ddff","secondary": "#d0bcff","surface": "#0b1326","surface-tint": "#adc6ff","inverse-surface": "#dbe2fd","surface-container-high": "#222a3e","on-secondary-fixed-variant": "#4d3d76","inverse-primary": "#455e90","inverse-on-surface": "#283044"},"borderRadius": {"DEFAULT": "0.25rem","lg": "0.5rem","xl": "0.75rem","full": "9999px"},"spacing": {"lg": "24px","md": "16px","container-margin": "20px","sm": "12px","xl": "32px","xs": "8px","touch-target-min": "44px","base": "4px"},"fontFamily": {"headline-lg": ["Inter"],"body-lg": ["Inter"],"display-lg": ["Inter"],"title-md": ["Inter"],"body-sm": ["Inter"],"label-caps": ["JetBrains Mono"],"headline-lg-mobile": ["Inter"]},"fontSize": {"headline-lg": ["32px",{"lineHeight": "40px","letterSpacing": "-0.01em","fontWeight": "700"}],"body-lg": ["16px",{"lineHeight": "24px","fontWeight": "400"}],"display-lg": ["48px",{"lineHeight": "56px","letterSpacing": "-0.02em","fontWeight": "800"}],"title-md": ["20px",{"lineHeight": "28px","fontWeight": "600"}],"body-sm": ["14px",{"lineHeight": "20px","fontWeight": "400"}],"label-caps": ["12px",{"lineHeight": "16px","letterSpacing": "0.05em","fontWeight": "600"}],"headline-lg-mobile": ["28px",{"lineHeight": "36px","fontWeight": "700"}]}}}}</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container pt-safe pb-safe"><main class="flex flex-col relative w-full bg-surface min-h-screen"><div class="flex flex-col w-full relative px-container-margin pb-12 overflow-hidden">
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-80 h-80 rounded-full bg-glow-primary blur-3xl pointer-events-none opacity-60"></div>
+<div class="absolute top-72 -right-20 w-64 h-64 rounded-full bg-glow-secondary blur-3xl pointer-events-none opacity-40"></div>
+<div class="flex justify-between items-center w-full pt-4 pb-2 z-10">
+<div class="flex items-center gap-xs">
+<div class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Cloud v3.4 Active</span>
+</div>
+<div class="flex items-center bg-surface-container-low p-base rounded-full shadow-inner">
+<button class="lang-pill px-3 py-1 rounded-full font-label-caps text-label-caps text-on-surface hover:text-primary transition-all duration-300" id="lang-or" onclick="setLang('or')">ଓଡ଼ିଆ</button>
+<button class="lang-pill px-3 py-1 rounded-full font-label-caps text-label-caps text-on-surface hover:text-primary transition-all duration-300" id="lang-hi" onclick="setLang('hi')">हिंदी</button>
+<button class="lang-pill active-lang px-3 py-1 rounded-full font-label-caps text-label-caps bg-primary-container text-on-primary-container shadow-sm transition-all duration-300" id="lang-en" onclick="setLang('en')">English</button>
+</div>
+</div>
+<div class="flex flex-col items-center text-center mt-6 mb-8 z-10">
+<div class="inline-flex items-center gap-xs px-3 py-1 rounded-full bg-surface-container-high mb-3 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">auto_awesome</span>
+<span class="font-label-caps text-label-caps text-tertiary" id="badge-text">Next-Gen Entrepreneur Portal</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile bg-gradient-to-r from-primary via-primary-container to-secondary bg-clip-text text-transparent drop-shadow-sm font-extrabold tracking-tight">
+      Digital Somanath
+    </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 max-w-[290px] leading-relaxed" id="hero-tagline">
+      AI + Digital Marketing + Online Business — All in One Place
+    </p>
+</div>
+<div class="w-full bg-surface-container rounded-xl p-md shadow-xl backdrop-blur-xl relative z-10">
+<div class="flex bg-surface-container-lowest p-base rounded-lg mb-6">
+<button class="flex-1 py-2 text-center font-title-md text-body-sm rounded-md bg-surface-container-high text-primary shadow-sm font-semibold transition-all duration-200" id="tab-signin" onclick="switchAuthMode('signin')">
+        Sign In
+      </button>
+<button class="flex-1 py-2 text-center font-title-md text-body-sm rounded-md text-on-surface-variant hover:text-on-surface font-semibold transition-all duration-200" id="tab-signup" onclick="switchAuthMode('signup')">
+        Create Account
+      </button>
+</div>
+<button class="w-full flex items-center justify-center gap-3 bg-surface-container-high hover:bg-surface-bright active:scale-[0.98] py-3 px-4 rounded-xl text-on-surface transition-all duration-200 shadow-sm mb-5 group" onclick="window.location.href='dashboard.html'" type="button">
+<svg class="w-5 h-5 flex-shrink-0" viewbox="0 0 24 24">
+<path d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z" fill="#4285F4"></path>
+<path d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z" fill="#34A853"></path>
+<path d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z" fill="#FBBC05"></path>
+<path d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z" fill="#EA4335"></path>
+</svg>
+<span class="font-body-lg text-body-sm font-semibold tracking-wide">Continue with Google</span>
+</button>
+<div class="flex items-center gap-3 mb-5">
+<div class="h-px bg-surface-variant flex-1"></div>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-widest text-[10px]">Or with credentials</span>
+<div class="h-px bg-surface-variant flex-1"></div>
+</div>
+<form class="flex flex-col gap-3.5" onsubmit="event.preventDefault(); window.location.href='dashboard.html';">
+<div class="hidden flex-col gap-1.5 transition-all duration-300" id="name-field-container">
+<label class="font-body-sm text-body-sm text-on-surface-variant font-medium" id="lbl-name">Full Name</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px]">person</span>
+<input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg pl-10 pr-3.5 py-3 focus:outline-none focus:bg-surface-container-high transition-colors" id="input-fullname" placeholder="e.g. Somanath Sahoo" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<label class="font-body-sm text-body-sm text-on-surface-variant font-medium" id="lbl-identity">Email or Phone</label>
+<span class="font-label-caps text-[10px] text-tertiary-container uppercase tracking-wider">ODISHA HUB</span>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px]">alternate_email</span>
+<input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg pl-10 pr-3.5 py-3 focus:outline-none focus:bg-surface-container-high transition-colors" id="input-identity" placeholder="+91 9937371494 or email" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<label class="font-body-sm text-body-sm text-on-surface-variant font-medium" id="lbl-pwd">Password</label>
+<button class="flex items-center gap-1 font-label-caps text-label-caps text-secondary hover:text-primary transition-colors" onclick="togglePasswordVisibility()" type="button">
+<span class="material-symbols-outlined text-[16px]" id="pwd-icon">visibility</span>
+<span id="pwd-text">Show</span>
+</button>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px]">lock</span>
+<input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg pl-10 pr-3.5 py-3 focus:outline-none focus:bg-surface-container-high tracking-wider transition-colors" id="input-password" placeholder="••••••••••••" type="password"/>
+</div>
+</div>
+<div class="flex justify-end items-center mt-1" id="forgot-password-row">
+<button class="font-body-sm text-[12px] text-primary hover:underline transition-all flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">sms</span>
+<span>Forgot Password? (OTP / SMS)</span>
+</button>
+</div>
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary py-3.5 px-4 rounded-full font-title-md text-body-sm font-bold active:scale-[0.98] transition-all shadow-md shadow-primary/20 mt-2 flex items-center justify-center gap-2" id="btn-submit" type="submit">
+<span id="btn-submit-text">Sign In to Workspace</span>
+<span class="material-symbols-outlined text-[18px]">east</span>
+</button>
+</form>
+<div class="mt-4 pt-4 bg-surface-container-low rounded-lg p-3 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-[11px] text-on-surface font-semibold">Priority Creator Support</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5 leading-snug">
+          Helpline: <a class="text-primary hover:underline font-mono" href="tel:+919937371494">+91 9937371494</a> • <a class="text-primary hover:underline" href="mailto:sipuncomputer@gmail.com">sipuncomputer@gmail.com</a>
+</p>
+</div>
+</div>
+</div>
+<div class="w-full mt-6 z-10">
+<div class="flex items-center gap-2 mb-3 px-1">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]">bolt</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider" id="features-header">Core Power Tools Included</span>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<div class="bg-surface-container-low p-3 rounded-lg flex items-center gap-2.5 shadow-sm">
+<div class="w-8 h-8 rounded-md bg-secondary-container flex items-center justify-center shrink-0">
+<span class="text-[16px]">🤖</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-[13px] text-on-surface font-bold truncate">20+ AI Tools</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant truncate">Automate content</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex items-center gap-2.5 shadow-sm">
+<div class="w-8 h-8 rounded-md bg-primary-container/20 flex items-center justify-center shrink-0">
+<span class="text-[16px]">📈</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-[13px] text-on-surface font-bold truncate">Digital Marketing</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant truncate">Growth &amp; scale</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex items-center gap-2.5 shadow-sm">
+<div class="w-8 h-8 rounded-md bg-tertiary-container/30 flex items-center justify-center shrink-0">
+<span class="text-[16px]">💼</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-[13px] text-on-surface font-bold truncate">Online Business</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant truncate">Odisha e-commerce</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex items-center gap-2.5 shadow-sm">
+<div class="w-8 h-8 rounded-md bg-surface-bright flex items-center justify-center shrink-0">
+<span class="text-[16px]">⚡</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-[13px] text-on-surface font-bold truncate">UPI &amp; Invoicing</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant truncate">Instant settlement</span>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full text-center mt-6 pt-2 z-10">
+<p class="font-label-caps text-[11px] text-outline">
+      Crafted with ❤️ for Bharat Entrepreneurs • Safe 256-Bit SSL
+    </p>
+</div>
+</div>
+<script>
+  let currentLang = 'en';
+  let isSignUp = false;
+
+  const i18n = {
+    en: {
+      badge: "Next-Gen Entrepreneur Portal",
+      tagline: "AI + Digital Marketing + Online Business — All in One Place",
+      signInTab: "Sign In",
+      signUpTab: "Create Account",
+      nameLabel: "Full Name",
+      identityLabel: "Email or Phone",
+      pwdLabel: "Password",
+      submitSignIn: "Sign In to Workspace",
+      submitSignUp: "Launch My Free Account",
+      featuresHeader: "Core Power Tools Included",
+      forgot: "Forgot Password? (OTP / SMS)"
+    },
+    hi: {
+      badge: "अगली पीढ़ी का उद्यमी पोर्टल",
+      tagline: "एआई + डिजिटल मार्केटिंग + ऑनलाइन व्यापार — सब कुछ एक ही स्थान पर",
+      signInTab: "साइन इन",
+      signUpTab: "खाता बनाएं",
+      nameLabel: "पूरा नाम",
+      identityLabel: "ईमेल या मोबाइल नंबर",
+      pwdLabel: "पासवर्ड",
+      submitSignIn: "वर्कस्पेस में साइन इन करें",
+      submitSignUp: "निशुल्क खाता प्रारंभ करें",
+      featuresHeader: "प्रमुख उपकरण शामिल हैं",
+      forgot: "पासवर्ड भूल गए? (ओटीपी / एसएमएस)"
+    },
+    or: {
+      badge: "ଆଧୁନିକ ଉଦ୍ୟୋଗୀ ପୋର୍ଟାଲ୍",
+      tagline: "ଏଆଇ + ଡିଜିଟାଲ୍ ମାର୍କେଟିଂ + ଅନଲାଇନ୍ ବ୍ୟବସାୟ — ଗୋଟିଏ ସ୍ଥାନରେ",
+      signInTab: "ସାଇନ୍ ଇନ୍",
+      signUpTab: "ନୂତନ ଖାତା",
+      nameLabel: "ସମ୍ପୂର୍ଣ୍ଣ ନାମ",
+      identityLabel: "ଇମେଲ୍ କିମ୍ବା ଫୋନ୍",
+      pwdLabel: "ପାସୱାର୍ଡ",
+      submitSignIn: "ୱାର୍କସ୍ପେସ୍ କୁ ପ୍ରବେଶ କରନ୍ତୁ",
+      submitSignUp: "ମାଗଣା ଖାତା ଆରମ୍ଭ କରନ୍ତୁ",
+      featuresHeader: "ମୁଖ୍ୟ ଟୁଲ୍ସ ଅନ୍ତର୍ଭୁକ୍ତ",
+      forgot: "ପାସୱାର୍ଡ ଭୁଲିଗଲେ କି? (OTP / SMS)"
+    }
+  };
+
+  function setLang(lang) {
+    currentLang = lang;
+    document.querySelectorAll('.lang-pill').forEach(btn => {
+      btn.className = "lang-pill px-3 py-1 rounded-full font-label-caps text-label-caps text-on-surface hover:text-primary transition-all duration-300";
+    });
+    
+    const activeBtn = document.getElementById('lang-' + lang);
+    if(activeBtn) {
+      activeBtn.className = "lang-pill active-lang px-3 py-1 rounded-full font-label-caps text-label-caps bg-primary-container text-on-primary-container shadow-sm transition-all duration-300";
+    }
+
+    const t = i18n[lang];
+    document.getElementById('badge-text').innerText = t.badge;
+    document.getElementById('hero-tagline').innerText = t.tagline;
+    document.getElementById('tab-signin').innerText = t.signInTab;
+    document.getElementById('tab-signup').innerText = t.signUpTab;
+    document.getElementById('lbl-name').innerText = t.nameLabel;
+    document.getElementById('lbl-identity').innerText = t.identityLabel;
+    document.getElementById('lbl-pwd').innerText = t.pwdLabel;
+    document.getElementById('features-header').innerText = t.featuresHeader;
+    updateSubmitButton();
+  }
+
+  function switchAuthMode(mode) {
+    const isNowSignUp = mode === 'signup';
+    isSignUp = isNowSignUp;
+    
+    const signinTab = document.getElementById('tab-signin');
+    const signupTab = document.getElementById('tab-signup');
+    const nameContainer = document.getElementById('name-field-container');
+    const forgotRow = document.getElementById('forgot-password-row');
+
+    if (isSignUp) {
+      signupTab.className = "flex-1 py-2 text-center font-title-md text-body-sm rounded-md bg-surface-container-high text-primary shadow-sm font-semibold transition-all duration-200";
+      signinTab.className = "flex-1 py-2 text-center font-title-md text-body-sm rounded-md text-on-surface-variant hover:text-on-surface font-semibold transition-all duration-200";
+      nameContainer.classList.remove('hidden');
+      nameContainer.classList.add('flex');
+      forgotRow.classList.add('hidden');
+    } else {
+      signinTab.className = "flex-1 py-2 text-center font-title-md text-body-sm rounded-md bg-surface-container-high text-primary shadow-sm font-semibold transition-all duration-200";
+      signupTab.className = "flex-1 py-2 text-center font-title-md text-body-sm rounded-md text-on-surface-variant hover:text-on-surface font-semibold transition-all duration-200";
+      nameContainer.classList.add('hidden');
+      nameContainer.classList.remove('flex');
+      forgotRow.classList.remove('hidden');
+    }
+    updateSubmitButton();
+  }
+
+  function updateSubmitButton() {
+    const textEl = document.getElementById('btn-submit-text');
+    const t = i18n[currentLang];
+    textEl.innerText = isSignUp ? t.submitSignUp : t.submitSignIn;
+  }
+
+  function togglePasswordVisibility() {
+    const pwdInput = document.getElementById('input-password');
+    const pwdIcon = document.getElementById('pwd-icon');
+    const pwdText = document.getElementById('pwd-text');
+    
+    if (pwdInput.type === 'password') {
+      pwdInput.type = 'text';
+      pwdIcon.innerText = 'visibility_off';
+      pwdText.innerText = 'Hide';
+    } else {
+      pwdInput.type = 'password';
+      pwdIcon.innerText = 'visibility';
+      pwdText.innerText = 'Show';
+    }
+  }
+</script></main></body></html>
