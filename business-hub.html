@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><title>Digital Somanath - Business &amp; Orders Hub</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#0b1326;color:#dbe2fd;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,20px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {darkMode: "class",theme: {extend: {"colors": {"surface-variant": "#2d3449","on-tertiary-container": "#79451e","on-secondary-container": "#c2aef0","on-tertiary-fixed-variant": "#6b3a14","surface-dim": "#0b1326","on-tertiary-fixed": "#301400","on-primary-fixed": "#001a42","surface-container-low": "#131b2e","tertiary-container": "#feb685","on-error-container": "#ffdad6","primary-fixed": "#d8e2ff","on-primary-fixed-variant": "#2c4677","on-error": "#690005","on-primary": "#122f5f","tertiary-fixed-dim": "#ffb786","glass-surface": "rgba(30, 41, 59, 0.55)","error": "#ffb4ab","glow-primary": "rgba(77, 142, 255, 0.15)","surface-bright": "#31394e","surface-container": "#171f33","background": "#0b1326","glow-secondary": "rgba(208, 188, 255, 0.1)","surface-container-lowest": "#060d20","tertiary-fixed": "#ffdcc6","primary-fixed-dim": "#adc6ff","tertiary": "#ffdbc4","on-secondary": "#37265e","primary": "#d8e2ff","outline": "#8e909a","secondary-container": "#503f79","on-background": "#dbe2fd","on-surface": "#dbe2fd","surface-container-highest": "#2d3449","secondary-fixed-dim": "#d0bcff","on-tertiary": "#502501","primary-container": "#adc6ff","on-surface-variant": "#c2c6d6","outline-variant": "#44474f","error-container": "#93000a","on-secondary-fixed": "#210f48","on-primary-container": "#385283","secondary-fixed": "#e9ddff","secondary": "#d0bcff","surface": "#0b1326","surface-tint": "#adc6ff","inverse-surface": "#dbe2fd","surface-container-high": "#222a3e","on-secondary-fixed-variant": "#4d3d76","inverse-primary": "#455e90","inverse-on-surface": "#283044"},"borderRadius": {"DEFAULT": "0.25rem","lg": "0.5rem","xl": "0.75rem","full": "9999px"},"spacing": {"lg": "24px","md": "16px","container-margin": "20px","sm": "12px","xl": "32px","xs": "8px","touch-target-min": "44px","base": "4px"},"fontFamily": {"headline-lg": ["Inter"],"body-lg": ["Inter"],"display-lg": ["Inter"],"title-md": ["Inter"],"body-sm": ["Inter"],"label-caps": ["JetBrains Mono"],"headline-lg-mobile": ["Inter"]},"fontSize": {"headline-lg": ["32px",{"lineHeight": "40px","letterSpacing": "-0.01em","fontWeight": "700"}],"body-lg": ["16px",{"lineHeight": "24px","fontWeight": "400"}],"display-lg": ["48px",{"lineHeight": "56px","letterSpacing": "-0.02em","fontWeight": "800"}],"title-md": ["20px",{"lineHeight": "28px","fontWeight": "600"}],"body-sm": ["14px",{"lineHeight": "20px","fontWeight": "400"}],"label-caps": ["12px",{"lineHeight": "16px","letterSpacing": "0.05em","fontWeight": "600"}],"headline-lg-mobile": ["28px",{"lineHeight": "36px","fontWeight": "700"}]}}}}</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+    .active-bar-glow {
+      filter: drop-shadow(0 0 6px rgba(173, 198, 255, 0.45));
+    }
+  </style></head><body class="bg-background text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container relative"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-container-margin flex items-center justify-between gap-xs"><div class="flex items-center gap-xs"><div class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary via-secondary to-tertiary-container flex items-center justify-center p-[1px]"><div class="w-full h-full bg-surface-container-lowest rounded-[7px] flex items-center justify-center"><span class="material-symbols-outlined text-[18px] text-primary">auto_awesome</span></div></div><div class="flex flex-col"><span class="font-title-md text-title-md tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary leading-tight">Digital Somanath</span><span class="font-label-caps text-[10px] text-on-surface-variant tracking-wider uppercase leading-none">AI Growth OS</span></div></div><div class="flex items-center gap-xs"><button aria-label="Change Language" class="h-touch-target-min px-xs rounded-full bg-surface-container-high/80 text-on-surface flex items-center gap-base transition-transform active:scale-95" type="button"><span class="material-symbols-outlined text-[16px] text-secondary">translate</span><span class="font-label-caps text-label-caps uppercase">OD</span><span class="text-[10px] text-outline">•</span><span class="font-label-caps text-label-caps uppercase text-primary">EN</span></button><button aria-label="Notifications" class="w-touch-target-min h-touch-target-min rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors active:scale-95 relative" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-tertiary-container ring-2 ring-surface"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full px-container-margin py-md gap-lg text-on-surface">
+<!-- Top Hero Glow / Ambient Background & 7-Day Trend Chart -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-surface-container-high via-surface-container to-surface-container-low p-md shadow-xl border border-white/5">
+<div class="absolute -right-8 -top-8 w-40 h-40 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-10 -bottom-10 w-36 h-36 rounded-full bg-secondary/15 blur-2xl pointer-events-none"></div>
+<!-- Admin Switch & Quick Badge -->
+<div class="flex items-center justify-between gap-xs mb-sm relative z-10">
+<div class="flex items-center gap-xs px-xs py-1 rounded-full bg-secondary-container/60 text-on-secondary-container">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="font-label-caps text-label-caps tracking-wider">COMMERCE OS</span>
+</div>
+<button class="flex items-center gap-base px-sm py-1 rounded-full bg-surface-variant/80 hover:bg-surface-variant text-on-surface text-body-sm font-body-sm transition-all active:scale-95 shadow-sm border border-white/5" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">settings</span>
+<span>Vendor Mode</span>
+</button>
+</div>
+<!-- Main Metric Snapshot -->
+<div class="flex flex-col gap-base mb-3 relative z-10">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gross Revenue (This Month)</span>
+<div class="flex items-baseline gap-xs">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-fixed to-secondary font-bold">₹1,24,500</span>
+<span class="flex items-center text-[12px] font-label-caps text-primary px-xs py-0.5 rounded bg-primary-container/20 border border-primary/20">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>+18.4%
+        </span>
+</div>
+</div>
+<!-- 1. Sleek Modern 7-Day Revenue Trend Visualization -->
+<div class="p-sm rounded-xl bg-surface-container-lowest/70 backdrop-blur-md border border-white/5 mb-sm flex flex-col gap-2 relative z-10">
+<div class="flex items-center justify-between text-xs">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary">monitoring</span>
+<span class="font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant">Last 7 Days Trend</span>
+</div>
+<span class="font-label-caps text-[11px] text-secondary font-semibold" id="trend-active-display">Sat Peak: ₹24,800</span>
+</div>
+<!-- Interactive Mini Bar + Glowing Sparkline Combo Chart -->
+<div class="relative pt-3 pb-1">
+<!-- Dynamic Sparkline Curve (SVG) -->
+<div class="h-16 w-full relative flex items-end justify-between px-1">
+<svg class="absolute inset-0 w-full h-16 pointer-events-none overflow-visible" preserveaspectratio="none" viewbox="0 0 280 64">
+<defs>
+<lineargradient id="chartGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#adc6ff" stop-opacity="0.3"></stop>
+<stop offset="100%" stop-color="#adc6ff" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<path d="M 12 40 L 52 28 L 92 36 L 132 20 L 172 25 L 212 10 L 252 48 L 252 64 L 12 64 Z" fill="url(#chartGrad)"></path>
+<path d="M 12 40 L 52 28 L 92 36 L 132 20 L 172 25 L 212 10 L 252 48" fill="none" stroke="#adc6ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<!-- Highlight pulse on peak Sat (x=212, y=10) -->
+<circle class="animate-ping" cx="212" cy="10" fill="#adc6ff" opacity="0.6" r="5"></circle>
+<circle cx="212" cy="10" fill="#d0bcff" r="3.5" stroke="#0b1326" stroke-width="1.5"></circle>
+</svg>
+<!-- 7 Day Interactive Bar Buttons with hover/touch tooltips -->
+<div class="w-full flex items-end justify-between relative z-10 h-full pt-2">
+<button class="trend-day group flex flex-col items-center gap-1 focus:outline-none" data-day="Mon" data-rev="₹14,200" type="button">
+<div class="w-6 h-8 rounded-t bg-surface-variant/60 group-hover:bg-primary-container/80 transition-all rounded-sm flex items-end justify-center">
+<div class="w-full bg-primary/40 group-hover:bg-primary h-[50%] rounded-t-sm"></div>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant group-hover:text-primary">M</span>
+</button>
+<button class="trend-day group flex flex-col items-center gap-1 focus:outline-none" data-day="Tue" data-rev="₹18,500" type="button">
+<div class="w-6 h-10 rounded-t bg-surface-variant/60 group-hover:bg-primary-container/80 transition-all rounded-sm flex items-end justify-center">
+<div class="w-full bg-primary/50 group-hover:bg-primary h-[68%] rounded-t-sm"></div>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant group-hover:text-primary">T</span>
+</button>
+<button class="trend-day group flex flex-col items-center gap-1 focus:outline-none" data-day="Wed" data-rev="₹15,100" type="button">
+<div class="w-6 h-9 rounded-t bg-surface-variant/60 group-hover:bg-primary-container/80 transition-all rounded-sm flex items-end justify-center">
+<div class="w-full bg-primary/40 group-hover:bg-primary h-[55%] rounded-t-sm"></div>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant group-hover:text-primary">W</span>
+</button>
+<button class="trend-day group flex flex-col items-center gap-1 focus:outline-none" data-day="Thu" data-rev="₹21,000" type="button">
+<div class="w-6 h-12 rounded-t bg-surface-variant/60 group-hover:bg-primary-container/80 transition-all rounded-sm flex items-end justify-center">
+<div class="w-full bg-primary/60 group-hover:bg-primary h-[80%] rounded-t-sm"></div>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant group-hover:text-primary">T</span>
+</button>
+<button class="trend-day group flex flex-col items-center gap-1 focus:outline-none" data-day="Fri" data-rev="₹19,400" type="button">
+<div class="w-6 h-11 rounded-t bg-surface-variant/60 group-hover:bg-primary-container/80 transition-all rounded-sm flex items-end justify-center">
+<div class="w-full bg-primary/50 group-hover:bg-primary h-[72%] rounded-t-sm"></div>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant group-hover:text-primary">F</span>
+</button>
+<button class="trend-day group flex flex-col items-center gap-1 focus:outline-none" data-day="Sat" data-rev="₹24,800" type="button">
+<div class="w-6 h-14 rounded-t bg-primary-container/70 group-hover:bg-primary active-bar-glow transition-all rounded-sm flex items-end justify-center">
+<div class="w-full bg-primary h-[95%] rounded-t-sm"></div>
+</div>
+<span class="font-label-caps text-[10px] text-primary font-bold">S</span>
+</button>
+<button class="trend-day group flex flex-col items-center gap-1 focus:outline-none" data-day="Sun" data-rev="₹11,500" type="button">
+<div class="w-6 h-7 rounded-t bg-surface-variant/60 group-hover:bg-primary-container/80 transition-all rounded-sm flex items-end justify-center">
+<div class="w-full bg-primary/30 group-hover:bg-primary h-[40%] rounded-t-sm"></div>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant group-hover:text-primary">S</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant pt-1 border-t border-white/5">
+<span>Avg: <strong class="text-on-surface font-label-caps">₹17,785/day</strong></span>
+<span class="flex items-center gap-1 text-primary"><span class="w-1.5 h-1.5 rounded-full bg-primary inline-block"></span>UPI Settled instantly</span>
+</div>
+</div>
+<!-- 2 Column Bento Metrics (CLICKABLE: Active Orders & Pending Invoices) -->
+<div class="grid grid-cols-2 gap-sm relative z-10">
+<button class="flex flex-col p-sm rounded-lg bg-surface-container-highest/40 backdrop-blur-md shadow-sm border border-transparent hover:border-primary/40 active:scale-[0.98] transition-all text-left group cursor-pointer" id="btn-open-active-orders" type="button">
+<div class="flex items-center justify-between text-on-surface-variant mb-1 w-full">
+<span class="font-label-caps text-[11px] uppercase tracking-wider group-hover:text-primary transition-colors">Active Orders</span>
+<span class="material-symbols-outlined text-[18px] text-primary group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md font-bold text-on-surface">14</span>
+<span class="material-symbols-outlined text-[16px] text-primary">local_shipping</span>
+</div>
+<div class="flex items-center justify-between mt-1 w-full">
+<span class="font-body-sm text-[12px] text-primary-fixed-dim">5 dispatched today</span>
+<span class="font-label-caps text-[10px] text-primary opacity-80 underline">View list</span>
+</div>
+</button>
+<button class="flex flex-col p-sm rounded-lg bg-surface-container-highest/40 backdrop-blur-md shadow-sm border border-transparent hover:border-tertiary-container/50 active:scale-[0.98] transition-all text-left group cursor-pointer" id="btn-open-pending-invoices" type="button">
+<div class="flex items-center justify-between text-on-surface-variant mb-1 w-full">
+<span class="font-label-caps text-[11px] uppercase tracking-wider group-hover:text-tertiary transition-colors">Pending Invoices</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md font-bold text-tertiary-fixed">03</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">receipt_long</span>
+</div>
+<div class="flex items-center justify-between mt-1 w-full">
+<span class="font-body-sm text-[12px] text-on-tertiary-container">₹12,400 due</span>
+<span class="font-label-caps text-[10px] text-tertiary-fixed-dim opacity-90 underline">Remind all</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Primary Interactive Quick Actions -->
+<div class="flex flex-col gap-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">Quick Actions</span>
+<span class="font-label-caps text-[11px] text-primary">Shortcuts</span>
+</div>
+<div class="grid grid-cols-3 gap-xs">
+<button class="group flex flex-col items-center justify-center p-sm rounded-xl bg-surface-container hover:bg-surface-container-high transition-all active:scale-95 shadow-sm text-center border border-white/5" onclick="document.getElementById('catalog-modal').classList.remove('hidden')" type="button">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center mb-1 text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[20px]">add_box</span>
+</div>
+<span class="font-body-sm text-[12px] font-semibold text-on-surface leading-tight">+ Product</span>
+</button>
+<button class="group flex flex-col items-center justify-center p-sm rounded-xl bg-surface-container hover:bg-surface-container-high transition-all active:scale-95 shadow-sm text-center border border-white/5" onclick="document.getElementById('inv-client').scrollIntoView({behavior: 'smooth'})" type="button">
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center mb-1 text-secondary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[20px]">flash_on</span>
+</div>
+<span class="font-body-sm text-[12px] font-semibold text-on-surface leading-tight">Instant Bill</span>
+</button>
+<button class="group flex flex-col items-center justify-center p-sm rounded-xl bg-surface-container hover:bg-surface-container-high transition-all active:scale-95 shadow-sm text-center border border-white/5" onclick="showFeedback('Scanner Camera initialized for UPI QR')" type="button">
+<div class="w-10 h-10 rounded-full bg-tertiary-container/30 flex items-center justify-center mb-1 text-tertiary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[20px]">qr_code_scanner</span>
+</div>
+<span class="font-body-sm text-[12px] font-semibold text-on-surface leading-tight">Scan UPI</span>
+</button>
+</div>
+</div>
+<!-- Gateway Connectivity Bar -->
+<div class="flex items-center justify-between px-md py-sm rounded-xl bg-surface-container-low shadow-sm border border-white/5">
+<div class="flex items-center gap-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Payment Gateways</span>
+</div>
+<div class="flex items-center gap-xs text-on-surface-variant font-label-caps text-[11px]">
+<span class="px-xs py-0.5 rounded bg-surface-container-highest text-primary-fixed">PhonePe</span>
+<span class="px-xs py-0.5 rounded bg-surface-container-highest text-secondary-fixed">GPay</span>
+<span class="px-xs py-0.5 rounded bg-surface-container-highest text-tertiary">Paytm</span>
+</div>
+</div>
+<!-- Section 1: Catalog & Inventory Management -->
+<section class="flex flex-col gap-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">inventory_2</span>
+<h2 class="font-title-md text-title-md font-bold text-on-surface">Products &amp; Services</h2>
+</div>
+<!-- Interactive View All (18) trigger -->
+<button class="font-label-caps text-[12px] text-primary hover:underline flex items-center gap-1 active:scale-95 transition-transform" id="btn-open-catalog" type="button">
+<span>View All (18)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<div class="flex flex-col gap-xs">
+<!-- Item 1 -->
+<div class="flex items-center justify-between p-sm rounded-xl bg-surface-container shadow-sm hover:bg-surface-container-high transition-colors border border-white/5">
+<div class="flex items-center gap-sm min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest overflow-hidden shrink-0 flex items-center justify-center">
+<img alt="Agency Starter Kit" class="w-full h-full object-cover" data-alt="Futuristic glowing purple and blue digital agency starter kit package mock up with neon elements 3D render minimalist dark obsidian background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo0-OCERqsGyE_wzew7qlthOWCFGOG1hS0znBxO4qGjpBQyCQKiNJVIbZDbU9xTPvv5tgmjLpcbcGwtoytxoKj6nrWMZGJHWaa84NuV04ssrtFg80OauR-Xw88fXj6BIIvZi3hUbI0yjWzRaJUN_9faK5xnix1QOEsu4VD5Aj8R01Cv-v_4x8hHcuJ5wD4eGqH3JL7bfgg-UJfVDR3DCn2MR-dCF96EQtdg65WBI-7-g894J8VJcAV2w"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">AI Growth &amp; SEO Playbook</span>
+<div class="flex items-center gap-xs mt-0.5">
+<span class="font-label-caps text-[11px] text-primary font-semibold">₹2,499</span>
+<span class="text-on-surface-variant text-[11px]">• Unlimited Digital</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-sm shrink-0">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center justify-between p-sm rounded-xl bg-surface-container shadow-sm hover:bg-surface-container-high transition-colors border border-white/5">
+<div class="flex items-center gap-sm min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest overflow-hidden shrink-0 flex items-center justify-center">
+<img alt="Odisha Local SEO Booster" class="w-full h-full object-cover" data-alt="High tech dark themed monthly subscription social marketing automation dashboard on tablet display glowing accents studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIpfwzZrKSg4lZjffGiM4GdDH2dXHUB5fAa7Q_QzzDTIgrVxTzwrkp4gRpCZsO2XLY3jKMNUBCKzp-rxGrhF7Nw_XnTSwVfJ9HZttas9uACflG_ppqOB-AD21fX8i_F0xT9cB75Y5nhNsQWpX7S7hPyFfiH5dvaxTe214T3RFwhALj0VsimDWAApW4E1qS0frxhkuDa18LtzutDFKBphwE81qMgmrsIrXUw9LCk0RIOyL-l-OSqR2qnw"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">Odisha Local SEO Booster</span>
+<div class="flex items-center gap-xs mt-0.5">
+<span class="font-label-caps text-[11px] text-primary font-semibold">₹8,999</span>
+<span class="text-error text-[11px] font-medium">• 2 Slots Left</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-sm shrink-0">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center justify-between p-sm rounded-xl bg-surface-container shadow-sm opacity-80 hover:opacity-100 transition-opacity border border-white/5">
+<div class="flex items-center gap-sm min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest overflow-hidden shrink-0 flex items-center justify-center">
+<img alt="Smart Metal NFC Card" class="w-full h-full object-cover" data-alt="Abstract golden hardware smart NFC identity business card on sleek black reflective obsidian stone surface modern tech luxury lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX4QFnZkjIMsyUv0JYURvGlDR5z7f2FgOkqvStAE46QfJWyzH0fN2MY2ecEl9dxswKs0zxkOQNSALlQqwp708B5TDnT3ghsHdtPNa5qdy4iPn1o3rSTEm_tYRWN87quGKO7FXMv5OgkjhkMj-NZ6ve8F2ylKlbQqSh9KAzxaAtRrA5dwIPmLG4pup38vXSbq9HnIBZimrl4LyEQh5zhfgtaGHmZJph8GlRpl8tGHnNiAte7xFhC6Qrgw"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">Smart Metal NFC Card</span>
+<div class="flex items-center gap-xs mt-0.5">
+<span class="font-label-caps text-[11px] text-outline">₹1,499</span>
+<span class="text-tertiary-fixed text-[11px]">• Out of Stock (22 leads)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-sm shrink-0">
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Order Management -->
+<section class="flex flex-col gap-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">shopping_cart_checkout</span>
+<h2 class="font-title-md text-title-md font-bold text-on-surface">Recent Orders</h2>
+</div>
+<span class="font-label-caps text-[11px] px-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant">Live Feed</span>
+</div>
+<!-- Featured Order Card -->
+<div class="flex flex-col p-md rounded-xl bg-surface-container shadow-md gap-sm relative overflow-hidden border border-white/5">
+<div class="flex items-start justify-between">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-xs">
+<span class="font-label-caps text-[12px] font-bold text-primary">#DS-8842</span>
+<span class="px-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-[10px]">UPI PAID</span>
+</div>
+<span class="font-body-lg text-body-lg font-bold text-on-surface mt-1 truncate">Agency Starter Kit</span>
+<span class="font-body-sm text-[13px] text-on-surface-variant">Rajesh Mohapatra • Bhubaneswar</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-title-md text-title-md font-bold text-primary">₹14,999</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">10:42 AM</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-xs border-t border-white/5">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-[12px] text-on-surface font-medium">Completed</span>
+</div>
+<button class="flex items-center gap-base px-sm py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-body-sm text-[12px] transition-all active:scale-95 shadow-sm" onclick="showFeedback('Downloading GST Invoice #DS-8842 PDF...')" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">download</span>
+<span>Invoice PDF</span>
+</button>
+</div>
+</div>
+<!-- Second Order Card -->
+<div class="flex flex-col p-md rounded-xl bg-surface-container shadow-md gap-sm border border-white/5">
+<div class="flex items-start justify-between">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-xs">
+<span class="font-label-caps text-[12px] font-bold text-tertiary">#DS-8841</span>
+<span class="px-xs py-0.5 rounded-full bg-surface-container-high text-tertiary font-label-caps text-[10px]">PENDING</span>
+</div>
+<span class="font-body-lg text-body-lg font-bold text-on-surface mt-1 truncate">Custom Domain &amp; SSL Setup</span>
+<span class="font-body-sm text-[13px] text-on-surface-variant">Pooja Rath • Cuttack</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-title-md text-title-md font-bold text-on-surface">₹2,100</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">Yesterday</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-xs border-t border-white/5">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px] text-tertiary">hourglass_top</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Awaiting Gateway Confirmation</span>
+</div>
+<button class="flex items-center gap-base px-sm py-1.5 rounded-lg bg-tertiary-container text-on-tertiary-container font-body-sm text-[12px] font-semibold transition-all active:scale-95 shadow-sm" onclick="showFeedback('WhatsApp payment reminder sent to Pooja Rath (+91 98612-XXXXX)')" type="button">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Reminder</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 3: Instant Invoice & Dynamic UPI Generator Card -->
+<section class="flex flex-col gap-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">receipt</span>
+<h2 class="font-title-md text-title-md font-bold text-on-surface">Instant Bill Generator</h2>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">auto_fix_high</span>
+</div>
+<div class="flex flex-col p-md rounded-xl bg-surface-container shadow-xl gap-md border border-white/5">
+<!-- Input Controls -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-caps text-[11px] uppercase text-on-surface-variant" for="inv-client">Client Details</label>
+<input class="w-full px-sm py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary border border-white/5" id="inv-client" placeholder="Client Name or Business" type="text" value="Smruti Ranjan Das"/>
+</div>
+<div class="grid grid-cols-2 gap-xs">
+<div class="flex flex-col gap-xs">
+<label class="font-label-caps text-[11px] uppercase text-on-surface-variant">GSTIN / PAN (Optional)</label>
+<input class="w-full px-sm py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-[13px] focus:outline-none focus:ring-1 focus:ring-primary border border-white/5" placeholder="21AAAAA0000A1Z5" type="text"/>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-caps text-[11px] uppercase text-on-surface-variant" for="inv-amount">Amount (₹)</label>
+<input class="w-full px-sm py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm font-semibold focus:outline-none focus:ring-1 focus:ring-primary border border-white/5" id="inv-amount" type="number" value="4500"/>
+</div>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-caps text-[11px] uppercase text-on-surface-variant">Service / Deliverable</label>
+<input class="w-full px-sm py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary border border-white/5" type="text" value="Social Media Campaign Audit &amp; Content Plan"/>
+</div>
+<!-- Live Dynamic QR & Summary Preview Box -->
+<div class="flex items-center gap-md p-sm rounded-lg bg-surface-container-highest/60 border border-white/5">
+<div class="w-20 h-20 bg-on-surface p-1.5 rounded-lg shrink-0 flex items-center justify-center shadow-md">
+<!-- Dynamic SVG UPI QR Representation -->
+<svg class="w-full h-full text-surface-dim fill-current" viewbox="0 0 100 100">
+<rect fill="currentColor" height="30" rx="3" width="30" x="0" y="0"></rect>
+<rect fill="#dbe2fd" height="18" width="18" x="6" y="6"></rect>
+<rect fill="currentColor" height="10" width="10" x="10" y="10"></rect>
+<rect fill="currentColor" height="30" rx="3" width="30" x="70" y="0"></rect>
+<rect fill="#dbe2fd" height="18" width="18" x="76" y="6"></rect>
+<rect fill="currentColor" height="10" width="10" x="80" y="10"></rect>
+<rect fill="currentColor" height="30" rx="3" width="30" x="0" y="70"></rect>
+<rect fill="#dbe2fd" height="18" width="18" x="6" y="76"></rect>
+<rect fill="currentColor" height="10" width="10" x="10" y="80"></rect>
+<rect height="12" width="16" x="42" y="10"></rect>
+<rect height="36" width="28" x="36" y="32"></rect>
+<rect height="14" width="20" x="72" y="42"></rect>
+<rect height="24" width="14" x="72" y="66"></rect>
+<rect height="14" width="20" x="42" y="78"></rect>
+</svg>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-[10px] uppercase text-primary font-bold">Live UPI QR Ready</span>
+<span class="font-body-sm text-[13px] font-semibold text-on-surface truncate">VPA: somanath@okhdfcbank</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Zero transaction fees on UPI Auto-settlement</span>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full py-3 rounded-xl bg-primary text-on-primary font-title-md text-[16px] font-bold flex items-center justify-center gap-xs shadow-lg shadow-primary/20 hover:opacity-95 transition-all active:scale-[0.98]" id="btn-create-invoice" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+<span>Generate &amp; Send UPI Link</span>
+</button>
+</div>
+</section>
+<!-- Micro-interaction feedback toast banner -->
+<div class="hidden flex items-center justify-between p-sm rounded-xl bg-secondary-container text-on-secondary-container shadow-lg transition-all fixed top-20 left-4 right-4 z-[90] border border-secondary/30 backdrop-blur-md" id="toast-banner">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px] text-primary-container">verified</span>
+<span class="font-body-sm text-body-sm font-semibold" id="toast-text">Payment link copied &amp; shared to WhatsApp!</span>
+</div>
+<button class="material-symbols-outlined text-[18px] hover:opacity-80" onclick="document.getElementById('toast-banner').classList.add('hidden')">close</button>
+</div>
+</div>
+<!-- ======================================================== -->
+<!-- MODAL 1: Active Orders & Invoices Detailed Slide-in Drawer -->
+<!-- ======================================================== -->
+<div class="fixed inset-0 z-50 hidden" id="orders-drawer-modal">
+<!-- Backdrop -->
+<div class="absolute inset-0 bg-surface-dim/80 backdrop-blur-md" onclick="closeOrdersDrawer()"></div>
+<!-- Drawer Container -->
+<div class="absolute bottom-0 inset-x-0 max-h-[88vh] bg-surface-container-low rounded-t-2xl flex flex-col shadow-2xl border-t border-white/10 overflow-hidden transition-all duration-300 transform translate-y-0">
+<!-- Drawer Header -->
+<div class="px-container-margin pt-4 pb-3 flex items-center justify-between border-b border-white/5 bg-surface-container/90">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]" id="drawer-icon">local_shipping</span>
+<h3 class="font-title-md text-title-md font-bold text-on-surface" id="drawer-title">Active Orders (14)</h3>
+</div>
+<span class="font-label-caps text-[11px] text-on-surface-variant">Real-time Order &amp; Invoice Status</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-variant/80 flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors" onclick="closeOrdersDrawer()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Filter Chips -->
+<div class="flex items-center gap-2 px-container-margin py-2.5 overflow-x-auto bg-surface-container-lowest/50 border-b border-white/5">
+<button class="status-filter-btn px-3 py-1 rounded-full text-xs font-label-caps bg-primary text-on-primary font-semibold shrink-0" data-filter="all" onclick="filterDrawerRows('all', this)">All (17)</button>
+<button class="status-filter-btn px-3 py-1 rounded-full text-xs font-label-caps bg-surface-variant/70 text-on-surface-variant hover:text-on-surface shrink-0" data-filter="pending" onclick="filterDrawerRows('pending', this)">Pending (3)</button>
+<button class="status-filter-btn px-3 py-1 rounded-full text-xs font-label-caps bg-surface-variant/70 text-on-surface-variant hover:text-on-surface shrink-0" data-filter="dispatched" onclick="filterDrawerRows('dispatched', this)">Dispatched (5)</button>
+<button class="status-filter-btn px-3 py-1 rounded-full text-xs font-label-caps bg-surface-variant/70 text-on-surface-variant hover:text-on-surface shrink-0" data-filter="completed" onclick="filterDrawerRows('completed', this)">Delivered (9)</button>
+<button class="status-filter-btn px-3 py-1 rounded-full text-xs font-label-caps bg-surface-variant/70 text-on-surface-variant hover:text-on-surface shrink-0" data-filter="overdue" onclick="filterDrawerRows('overdue', this)">Overdue (0)</button>
+</div>
+<!-- Drawer Content Scroll Area -->
+<div class="flex-1 overflow-y-auto p-container-margin flex flex-col gap-3" id="drawer-rows-container">
+<!-- Row 1 (Pending Invoice) -->
+<div class="drawer-row flex flex-col p-3 rounded-xl bg-surface-container border border-tertiary/20 shadow-sm gap-2" data-status="pending">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-caps text-xs font-bold text-tertiary">#DS-8841</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary-fixed font-label-caps text-[10px] uppercase">Pending Payment</span>
+</div>
+<h4 class="font-body-sm font-semibold text-on-surface mt-0.5">Custom Domain &amp; SSL Setup</h4>
+<p class="font-body-sm text-xs text-on-surface-variant">Pooja Rath • Cuttack</p>
+</div>
+<div class="text-right">
+<span class="font-title-md text-base font-bold text-tertiary-fixed">₹2,100</span>
+<p class="font-label-caps text-[10px] text-on-surface-variant">Yesterday</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-white/5">
+<span class="font-body-sm text-[11px] text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timer</span> Due 24h ago
+      </span>
+<div class="flex gap-2">
+<button class="px-2.5 py-1 rounded-lg bg-tertiary-container text-on-tertiary-container text-xs font-semibold flex items-center gap-1 active:scale-95" onclick="showFeedback('WhatsApp reminder sent with direct UPI link!')">
+<span class="material-symbols-outlined text-[14px]">send</span> Remind WhatsApp
+      </button>
+</div>
+</div>
+</div>
+<!-- Row 2 (Pending Invoice) -->
+<div class="drawer-row flex flex-col p-3 rounded-xl bg-surface-container border border-tertiary/20 shadow-sm gap-2" data-status="pending">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-caps text-xs font-bold text-tertiary">#DS-8839</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary-fixed font-label-caps text-[10px] uppercase">Pending Payment</span>
+</div>
+<h4 class="font-body-sm font-semibold text-on-surface mt-0.5">Meta Ads Campaign Setup (Month 1)</h4>
+<p class="font-body-sm text-xs text-on-surface-variant">Ananya Tripathy • Rourkela</p>
+</div>
+<div class="text-right">
+<span class="font-title-md text-base font-bold text-tertiary-fixed">₹5,800</span>
+<p class="font-label-caps text-[10px] text-on-surface-variant">2 days ago</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-white/5">
+<span class="font-body-sm text-[11px] text-on-surface-variant">Invoice generated via GPay</span>
+<div class="flex gap-2">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-high text-xs text-on-surface flex items-center gap-1 active:scale-95" onclick="showFeedback('Downloaded Invoice #DS-8839')">
+<span class="material-symbols-outlined text-[14px]">download</span> PDF
+      </button>
+<button class="px-2.5 py-1 rounded-lg bg-tertiary-container text-on-tertiary-container text-xs font-semibold flex items-center gap-1 active:scale-95" onclick="showFeedback('Payment Link SMS resent to Ananya')">
+<span class="material-symbols-outlined text-[14px]">sms</span> SMS Link
+      </button>
+</div>
+</div>
+</div>
+<!-- Row 3 (Pending Invoice) -->
+<div class="drawer-row flex flex-col p-3 rounded-xl bg-surface-container border border-tertiary/20 shadow-sm gap-2" data-status="pending">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-caps text-xs font-bold text-tertiary">#DS-8837</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary-fixed font-label-caps text-[10px] uppercase">Pending Payment</span>
+</div>
+<h4 class="font-body-sm font-semibold text-on-surface mt-0.5">Custom WhatsApp AI Bot Token Package</h4>
+<p class="font-body-sm text-xs text-on-surface-variant">Devi Prasad Lenka • Puri</p>
+</div>
+<div class="text-right">
+<span class="font-title-md text-base font-bold text-tertiary-fixed">₹4,500</span>
+<p class="font-label-caps text-[10px] text-on-surface-variant">3 days ago</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-white/5">
+<span class="font-body-sm text-[11px] text-on-surface-variant">Client viewed invoice twice</span>
+<button class="px-2.5 py-1 rounded-lg bg-tertiary-container text-on-tertiary-container text-xs font-semibold flex items-center gap-1 active:scale-95" onclick="showFeedback('Auto-reminder WhatsApp queued')">
+<span class="material-symbols-outlined text-[14px]">send</span> WhatsApp
+    </button>
+</div>
+</div>
+<!-- Row 4 (Dispatched Order) -->
+<div class="drawer-row flex flex-col p-3 rounded-xl bg-surface-container border border-primary/20 shadow-sm gap-2" data-status="dispatched">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-caps text-xs font-bold text-primary">#DS-8843</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-primary-fixed font-label-caps text-[10px] uppercase">Dispatched (Bluedart)</span>
+</div>
+<h4 class="font-body-sm font-semibold text-on-surface mt-0.5">2x Smart Metal NFC Business Cards</h4>
+<p class="font-body-sm text-xs text-on-surface-variant">Kalyan Patnaik • Berhampur</p>
+</div>
+<div class="text-right">
+<span class="font-title-md text-base font-bold text-primary">₹2,998</span>
+<p class="font-label-caps text-[10px] text-on-surface-variant">08:15 AM</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-white/5">
+<span class="font-body-sm text-[11px] text-primary-fixed-dim flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span> AWB: BD902148291
+      </span>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-high text-xs text-on-surface flex items-center gap-1 active:scale-95" onclick="showFeedback('Tracking Courier: Out for Delivery by Berhampur Hub')">
+<span class="material-symbols-outlined text-[14px]">share_location</span> Track Courier
+      </button>
+</div>
+</div>
+<!-- Row 5 (Completed Order) -->
+<div class="drawer-row flex flex-col p-3 rounded-xl bg-surface-container border border-white/5 shadow-sm gap-2" data-status="completed">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-caps text-xs font-bold text-primary">#DS-8842</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-[10px] uppercase">UPI PAID • DELIVERED</span>
+</div>
+<h4 class="font-body-sm font-semibold text-on-surface mt-0.5">Agency Starter Kit &amp; Consultation</h4>
+<p class="font-body-sm text-xs text-on-surface-variant">Rajesh Mohapatra • Bhubaneswar</p>
+</div>
+<div class="text-right">
+<span class="font-title-md text-base font-bold text-primary">₹14,999</span>
+<p class="font-label-caps text-[10px] text-on-surface-variant">10:42 AM</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-white/5">
+<span class="font-body-sm text-[11px] text-on-surface-variant">Completed &amp; Auto-Settled to HDFC</span>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-high text-xs text-on-surface flex items-center gap-1 active:scale-95" onclick="showFeedback('Downloaded GST Invoice PDF #DS-8842')">
+<span class="material-symbols-outlined text-[14px]">receipt</span> Invoice PDF
+      </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ======================================================== -->
+<!-- MODAL 2: Product & Service Catalog Overlay (View All 18) -->
+<!-- ======================================================== -->
+<div class="fixed inset-0 z-50 hidden" id="catalog-modal">
+<div class="absolute inset-0 bg-surface-dim/85 backdrop-blur-md" onclick="closeCatalogModal()"></div>
+<div class="absolute inset-x-0 bottom-0 top-12 bg-surface-container-low rounded-t-2xl flex flex-col shadow-2xl border-t border-white/10 overflow-hidden">
+<!-- Header -->
+<div class="px-container-margin py-3 flex items-center justify-between border-b border-white/5 bg-surface-container/90">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">storefront</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">Product &amp; Service Catalog</h3>
+<span class="font-label-caps text-[11px] text-on-surface-variant">18 Offerings • Live Commerce Hub</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-variant/80 flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors" onclick="closeCatalogModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Search & Category Filters -->
+<div class="px-container-margin py-2.5 bg-surface-container-lowest/60 border-b border-white/5 flex flex-col gap-2">
+<!-- Search Bar -->
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full pl-9 pr-3 py-2 rounded-xl bg-surface-container-high text-on-surface text-body-sm placeholder-on-surface-variant/60 focus:outline-none focus:ring-1 focus:ring-primary border border-white/5" id="catalog-search" oninput="filterCatalogSearch(this.value)" placeholder="Search tools, courses, services..." type="text"/>
+</div>
+<!-- Category Pills -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs">
+<button class="catalog-tab px-3 py-1 rounded-full bg-primary text-on-primary font-label-caps font-semibold shrink-0" data-cat="all" onclick="filterCatalogCategory('all', this)">All (18)</button>
+<button class="catalog-tab px-3 py-1 rounded-full bg-surface-variant/70 text-on-surface-variant hover:text-on-surface font-label-caps shrink-0" data-cat="ai-tools" onclick="filterCatalogCategory('ai-tools', this)">AI Tools (6)</button>
+<button class="catalog-tab px-3 py-1 rounded-full bg-surface-variant/70 text-on-surface-variant hover:text-on-surface font-label-caps shrink-0" data-cat="services" onclick="filterCatalogCategory('services', this)">Marketing Services (5)</button>
+<button class="catalog-tab px-3 py-1 rounded-full bg-surface-variant/70 text-on-surface-variant hover:text-on-surface font-label-caps shrink-0" data-cat="hardware" onclick="filterCatalogCategory('hardware', this)">Hardware / NFC (3)</button>
+<button class="catalog-tab px-3 py-1 rounded-full bg-surface-variant/70 text-on-surface-variant hover:text-on-surface font-label-caps shrink-0" data-cat="courses" onclick="filterCatalogCategory('courses', this)">Courses (4)</button>
+</div>
+</div>
+<!-- Catalog Grid / List -->
+<div class="flex-1 overflow-y-auto p-container-margin flex flex-col gap-2.5" id="catalog-items-list">
+<!-- Product Item 1 -->
+<div class="catalog-item flex items-center justify-between p-3 rounded-xl bg-surface-container border border-white/5 shadow-sm" data-category="ai-tools" data-name="ai growth seo playbook">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest overflow-hidden shrink-0 flex items-center justify-center">
+<img alt="AI Playbook" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo0-OCERqsGyE_wzew7qlthOWCFGOG1hS0znBxO4qGjpBQyCQKiNJVIbZDbU9xTPvv5tgmjLpcbcGwtoytxoKj6nrWMZGJHWaa84NuV04ssrtFg80OauR-Xw88fXj6BIIvZi3hUbI0yjWzRaJUN_9faK5xnix1QOEsu4VD5Aj8R01Cv-v_4x8hHcuJ5wD4eGqH3JL7bfgg-UJfVDR3DCn2MR-dCF96EQtdg65WBI-7-g894J8VJcAV2w"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm font-semibold text-on-surface truncate">AI Growth &amp; SEO Playbook</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-caps text-xs text-primary font-bold">₹2,499</span>
+<span class="text-[11px] text-secondary font-label-caps">• AI Tools</span>
+</div>
+<span class="text-[11px] text-on-surface-variant">Instant Digital Delivery • PDF + Prompt Sheets</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="p-1.5 rounded-lg bg-surface-variant text-on-surface-variant hover:text-on-surface" onclick="showFeedback('Share link copied for AI Growth Playbook')" title="Share link" type="button">
+<span class="material-symbols-outlined text-[16px]">share</span>
+</button>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+<!-- Product Item 2 -->
+<div class="catalog-item flex items-center justify-between p-3 rounded-xl bg-surface-container border border-white/5 shadow-sm" data-category="services" data-name="odisha local seo booster monthly retainer">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest overflow-hidden shrink-0 flex items-center justify-center">
+<img alt="Odisha Local SEO" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIpfwzZrKSg4lZjffGiM4GdDH2dXHUB5fAa7Q_QzzDTIgrVxTzwrkp4gRpCZsO2XLY3jKMNUBCKzp-rxGrhF7Nw_XnTSwVfJ9HZttas9uACflG_ppqOB-AD21fX8i_F0xT9cB75Y5nhNsQWpX7S7hPyFfiH5dvaxTe214T3RFwhALj0VsimDWAApW4E1qS0frxhkuDa18LtzutDFKBphwE81qMgmrsIrXUw9LCk0RIOyL-l-OSqR2qnw"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm font-semibold text-on-surface truncate">Odisha Local SEO Booster</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-caps text-xs text-primary font-bold">₹8,999/mo</span>
+<span class="text-[11px] text-error font-label-caps font-semibold">• 2 Slots Left</span>
+</div>
+<span class="text-[11px] text-on-surface-variant">Google Maps 3-Pack rank guarantee in Odisha</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="p-1.5 rounded-lg bg-surface-variant text-on-surface-variant hover:text-on-surface" onclick="showFeedback('Share link copied for Odisha Local SEO Booster')" title="Share link" type="button">
+<span class="material-symbols-outlined text-[16px]">share</span>
+</button>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+<!-- Product Item 3 -->
+<div class="catalog-item flex items-center justify-between p-3 rounded-xl bg-surface-container border border-white/5 shadow-sm opacity-85" data-category="hardware" data-name="smart metal nfc card digital card">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest overflow-hidden shrink-0 flex items-center justify-center">
+<img alt="NFC Card" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX4QFnZkjIMsyUv0JYURvGlDR5z7f2FgOkqvStAE46QfJWyzH0fN2MY2ecEl9dxswKs0zxkOQNSALlQqwp708B5TDnT3ghsHdtPNa5qdy4iPn1o3rSTEm_tYRWN87quGKO7FXMv5OgkjhkMj-NZ6ve8F2ylKlbQqSh9KAzxaAtRrA5dwIPmLG4pup38vXSbq9HnIBZimrl4LyEQh5zhfgtaGHmZJph8GlRpl8tGHnNiAte7xFhC6Qrgw"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm font-semibold text-on-surface truncate">Smart Metal NFC Business Card</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-caps text-xs text-outline font-bold">₹1,499</span>
+<span class="text-[11px] text-tertiary-fixed font-label-caps">• Out of Stock (22 waitlist)</span>
+</div>
+<span class="text-[11px] text-on-surface-variant">Matte Black Stainless Steel with Laser QR</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="px-2 py-1 rounded bg-tertiary-container/30 text-tertiary-fixed text-xs font-label-caps active:scale-95" onclick="showFeedback('Notifying 22 waitlisted leads...')">Notify Leads</button>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+<!-- Product Item 4 -->
+<div class="catalog-item flex items-center justify-between p-3 rounded-xl bg-surface-container border border-white/5 shadow-sm" data-category="courses" data-name="odia ai business blueprint masterclass course">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-12 h-12 rounded-lg bg-secondary-container/40 overflow-hidden shrink-0 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">school</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm font-semibold text-on-surface truncate">Odia AI Business Blueprint Masterclass</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-caps text-xs text-primary font-bold">₹3,499</span>
+<span class="text-[11px] text-primary-container font-label-caps">• 48 Enrolled</span>
+</div>
+<span class="text-[11px] text-on-surface-variant">Complete video course with 1-on-1 mentorship session</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="p-1.5 rounded-lg bg-surface-variant text-on-surface-variant hover:text-on-surface" onclick="showFeedback('Share link copied for Odia AI Course')" title="Share link" type="button">
+<span class="material-symbols-outlined text-[16px]">share</span>
+</button>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+<!-- Product Item 5 -->
+<div class="catalog-item flex items-center justify-between p-3 rounded-xl bg-surface-container border border-white/5 shadow-sm" data-category="services" data-name="custom whatsapp ai chatbot enterprise automation">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-12 h-12 rounded-lg bg-primary-container/20 overflow-hidden shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">forum</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm font-semibold text-on-surface truncate">Custom WhatsApp AI Bot Integration</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-caps text-xs text-primary font-bold">₹12,500</span>
+<span class="text-[11px] text-on-surface-variant font-label-caps">• Enterprise</span>
+</div>
+<span class="text-[11px] text-on-surface-variant">Bilingual Odia + English Lead Qualification</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="p-1.5 rounded-lg bg-surface-variant text-on-surface-variant hover:text-on-surface" onclick="showFeedback('Share link copied for WhatsApp AI Bot')" title="Share link" type="button">
+<span class="material-symbols-outlined text-[16px]">share</span>
+</button>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Footer Action inside Catalog -->
+<div class="p-container-margin border-t border-white/5 bg-surface-container flex items-center justify-between">
+<span class="text-xs text-on-surface-variant font-label-caps">18 Total Products Listed</span>
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary font-semibold text-xs flex items-center gap-1.5 shadow-md active:scale-95" onclick="showFeedback('Add new item form initialized')" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span> Add New Item
+    </button>
+</div>
+</div>
+</div>
+<!-- ======================================================== -->
+<!-- 4. FLOATING AI ASSISTANT BUSINESS INSIGHTS WIDGET & DRAWER -->
+<!-- ======================================================== -->
+<!-- Floating Pill Trigger Button (Positioned above bottom nav) -->
+<div class="fixed right-4 bottom-20 z-40">
+<button class="group flex items-center gap-2 pl-3 pr-4 py-2.5 rounded-full bg-gradient-to-r from-secondary via-secondary-container to-primary text-on-surface shadow-2xl shadow-secondary/30 hover:shadow-secondary/50 border border-white/20 active:scale-95 transition-all" id="btn-ai-copilot" onclick="toggleAiDrawer()" type="button">
+<span class="material-symbols-outlined text-[20px] text-on-secondary-container animate-spin" style="animation-duration: 6s; font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-label-caps text-xs font-bold tracking-wide text-white drop-shadow-sm">AI Insights</span>
+<span class="w-2 h-2 rounded-full bg-tertiary-container ring-2 ring-surface animate-pulse"></span>
+</button>
+</div>
+<!-- Sleek Floating Glass Drawer / Popup for AI Business Insights -->
+<div class="fixed inset-0 z-50 hidden" id="ai-insights-modal">
+<div class="absolute inset-0 bg-surface-dim/75 backdrop-blur-sm" onclick="toggleAiDrawer()"></div>
+<div class="absolute bottom-20 right-4 left-4 max-w-md mx-auto bg-surface-container/95 backdrop-blur-xl border border-secondary/30 rounded-2xl p-md shadow-2xl flex flex-col gap-sm overflow-hidden transform transition-all duration-300">
+<div class="flex items-center justify-between border-b border-white/10 pb-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">neurology</span>
+</div>
+<div>
+<h4 class="font-title-md text-base font-bold text-on-surface">AI Business Copilot</h4>
+<p class="font-label-caps text-[10px] text-primary">Somanath Growth Intelligence</p>
+</div>
+</div>
+<button class="w-7 h-7 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="toggleAiDrawer()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Intelligence Cards -->
+<div class="flex flex-col gap-2.5 max-h-[55vh] overflow-y-auto pr-1">
+<!-- Insight 1 -->
+<div class="p-3 rounded-xl bg-surface-container-low/90 border border-primary/20 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-[11px] text-primary font-bold flex items-center gap-1">
+<span>📈</span> Revenue Velocity
+      </span>
+<span class="text-[10px] font-label-caps text-primary px-1.5 py-0.5 rounded bg-primary-container/20">+18.4% WoW</span>
+</div>
+<p class="font-body-sm text-xs text-on-surface leading-relaxed">
+      Your revenue is up 18.4% this week — driven by strong uptake in <strong class="text-primary font-semibold">'Odisha Local SEO Booster'</strong> and Agency Kits.
+    </p>
+</div>
+<!-- Insight 2 -->
+<div class="p-3 rounded-xl bg-surface-container-low/90 border border-tertiary/20 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-[11px] text-tertiary font-bold flex items-center gap-1">
+<span>⚠️</span> Cashflow Alert
+      </span>
+<span class="text-[10px] font-label-caps text-tertiary-fixed px-1.5 py-0.5 rounded bg-tertiary-container/30">₹12,400 Due</span>
+</div>
+<p class="font-body-sm text-xs text-on-surface leading-relaxed">
+      ₹12,400 pending in 3 invoices — 1-click WhatsApp reminder ready for <strong class="text-on-surface font-semibold">Pooja Rath</strong> (₹2,100).
+    </p>
+<div class="mt-1 flex justify-end">
+<button class="px-2.5 py-1 rounded bg-tertiary-container text-on-tertiary-container text-xs font-semibold flex items-center gap-1 active:scale-95" onclick="showFeedback('Triggering WhatsApp reminder to Pooja Rath...'); toggleAiDrawer();">
+<span class="material-symbols-outlined text-[13px]">send</span> Remind Pooja
+      </button>
+</div>
+</div>
+<!-- Insight 3 -->
+<div class="p-3 rounded-xl bg-surface-container-low/90 border border-secondary/20 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-[11px] text-secondary font-bold flex items-center gap-1">
+<span>🚀</span> Inventory Recommendation
+      </span>
+<span class="text-[10px] font-label-caps text-secondary-fixed px-1.5 py-0.5 rounded bg-secondary-container/40">22 Leads</span>
+</div>
+<p class="font-body-sm text-xs text-on-surface leading-relaxed">
+      Recommendation: Restock <strong class="text-secondary font-semibold">'Smart Metal NFC Card'</strong> to capture 22 waitlisted leads worth ₹32,978 estimated gross value.
+    </p>
+</div>
+</div>
+<!-- Actionable Prompt Chips -->
+<div class="flex flex-col gap-1.5 pt-2 border-t border-white/10">
+<span class="font-label-caps text-[10px] uppercase text-on-surface-variant">Instant AI Actions</span>
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1">
+<button class="px-2.5 py-1 rounded-full bg-surface-variant hover:bg-surface-variant/80 text-[11px] text-primary font-label-caps whitespace-nowrap active:scale-95" onclick="showFeedback('Running WhatsApp Auto-Reminders batch job...'); toggleAiDrawer();">
+      Send Auto-Reminders
+    </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-variant hover:bg-surface-variant/80 text-[11px] text-secondary font-label-caps whitespace-nowrap active:scale-95" onclick="showFeedback('Analyzing Top Ad Campaign ROI: 4.8x ROAS on Meta'); toggleAiDrawer();">
+      Analyze Top Ad Campaign
+    </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-variant hover:bg-surface-variant/80 text-[11px] text-tertiary font-label-caps whitespace-nowrap active:scale-95" onclick="showFeedback('Weekly P&amp;L exported to Downloads folder'); toggleAiDrawer();">
+      Generate Weekly P&amp;L
+    </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Feedback Toast Helper
+  function showFeedback(text) {
+    const toast = document.getElementById('toast-banner');
+    const toastText = document.getElementById('toast-text');
+    if (toast && toastText) {
+      toastText.innerText = text;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 4000);
+    }
+  }
+
+  // Instant invoice submit handler
+  document.getElementById('btn-create-invoice')?.addEventListener('click', () => {
+    const client = document.getElementById('inv-client')?.value || 'Client';
+    const amt = document.getElementById('inv-amount')?.value || '0';
+    showFeedback(`UPI Payment Link of ₹${amt} generated for ${client} & ready to share!`);
+  });
+
+  // 1. Interactive 7-Day Revenue Trend Hover/Click
+  document.querySelectorAll('.trend-day').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const day = btn.getAttribute('data-day');
+      const rev = btn.getAttribute('data-rev');
+      const display = document.getElementById('trend-active-display');
+      if (display) {
+        display.innerHTML = `${day} Revenue: <span class="text-primary font-bold">${rev}</span>`;
+      }
+    });
+  });
+
+  // 2. Clickable Active Orders and Pending Invoices Drawer
+  const ordersDrawer = document.getElementById('orders-drawer-modal');
+  const drawerTitle = document.getElementById('drawer-title');
+  const drawerIcon = document.getElementById('drawer-icon');
+
+  function openOrdersDrawer(mode) {
+    if (!ordersDrawer) return;
+    ordersDrawer.classList.remove('hidden');
+    if (mode === 'invoices') {
+      drawerTitle.innerText = "Pending Invoices (03)";
+      drawerIcon.innerText = "receipt_long";
+      filterDrawerRows('pending');
+    } else {
+      drawerTitle.innerText = "Active Orders (14)";
+      drawerIcon.innerText = "local_shipping";
+      filterDrawerRows('all');
+    }
+  }
+
+  function closeOrdersDrawer() {
+    if (ordersDrawer) ordersDrawer.classList.add('hidden');
+  }
+
+  document.getElementById('btn-open-active-orders')?.addEventListener('click', () => openOrdersDrawer('orders'));
+  document.getElementById('btn-open-pending-invoices')?.addEventListener('click', () => openOrdersDrawer('invoices'));
+
+  function filterDrawerRows(status, btnElement) {
+    const rows = document.querySelectorAll('.drawer-row');
+    rows.forEach(row => {
+      const rowStatus = row.getAttribute('data-status');
+      if (status === 'all' || rowStatus === status) {
+        row.style.display = 'flex';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+    // Toggle active filter button styling
+    const buttons = document.querySelectorAll('.status-filter-btn');
+    buttons.forEach(btn => {
+      btn.className = "status-filter-btn px-3 py-1 rounded-full text-xs font-label-caps bg-surface-variant/70 text-on-surface-variant hover:text-on-surface shrink-0";
+    });
+    if (btnElement) {
+      btnElement.className = "status-filter-btn px-3 py-1 rounded-full text-xs font-label-caps bg-primary text-on-primary font-semibold shrink-0";
+    } else {
+      const match = document.querySelector(`.status-filter-btn[data-filter="${status}"]`);
+      if (match) match.className = "status-filter-btn px-3 py-1 rounded-full text-xs font-label-caps bg-primary text-on-primary font-semibold shrink-0";
+    }
+  }
+
+  // 3. Interactive View All Catalog Modal
+  const catalogModal = document.getElementById('catalog-modal');
+  function openCatalogModal() {
+    if (catalogModal) catalogModal.classList.remove('hidden');
+  }
+  function closeCatalogModal() {
+    if (catalogModal) catalogModal.classList.add('hidden');
+  }
+  document.getElementById('btn-open-catalog')?.addEventListener('click', openCatalogModal);
+
+  function filterCatalogCategory(cat, btn) {
+    const items = document.querySelectorAll('.catalog-item');
+    items.forEach(item => {
+      const itemCat = item.getAttribute('data-category');
+      if (cat === 'all' || itemCat === cat) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+    document.querySelectorAll('.catalog-tab').forEach(b => {
+      b.className = "catalog-tab px-3 py-1 rounded-full bg-surface-variant/70 text-on-surface-variant hover:text-on-surface font-label-caps shrink-0";
+    });
+    if (btn) {
+      btn.className = "catalog-tab px-3 py-1 rounded-full bg-primary text-on-primary font-label-caps font-semibold shrink-0";
+    }
+  }
+
+  function filterCatalogSearch(query) {
+    const q = query.toLowerCase().trim();
+    const items = document.querySelectorAll('.catalog-item');
+    items.forEach(item => {
+      const name = item.getAttribute('data-name') || '';
+      if (!q || name.includes(q)) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+
+  // 4. Floating AI Copilot Widget
+  const aiModal = document.getElementById('ai-insights-modal');
+  function toggleAiDrawer() {
+    if (!aiModal) return;
+    aiModal.classList.toggle('hidden');
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-2xl shadow-[0_-4px_16px_rgba(0,0,0,0.3)]" data-active-classes="text-primary-container bg-secondary-container"><div class="flex items-center justify-around h-16 px-xs"><a class="group flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded-xl px-xs py-base text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="home" href="#"><span class="material-symbols-outlined text-[22px] mb-[2px]">home</span><span class="font-label-caps text-[11px] leading-tight">Home</span></a><a class="group flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded-xl px-xs py-base text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="ai-tools" href="#"><span class="material-symbols-outlined text-[22px] mb-[2px]">smart_toy</span><span class="font-label-caps text-[11px] leading-tight">AI Tools</span></a><a class="group flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded-xl px-xs py-base text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="services" href="#"><span class="material-symbols-outlined text-[22px] mb-[2px]">campaign</span><span class="font-label-caps text-[11px] leading-tight">Services</span></a><a aria-current="page" class="group flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded-xl px-xs py-base transition-all active:scale-95 text-primary-container bg-secondary-container" data-path="business" href="#"><span class="material-symbols-outlined text-[22px] mb-[2px]">storefront</span><span class="font-label-caps text-[11px] leading-tight">Business</span></a><a class="group flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded-xl px-xs py-base text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="account" href="#"><span class="material-symbols-outlined text-[22px] mb-[2px]">person</span><span class="font-label-caps text-[11px] leading-tight">Account</span></a></div></nav></body></html>
